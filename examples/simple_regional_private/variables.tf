@@ -27,6 +27,10 @@ variable "region" {
   description = "The region to host the cluster in"
 }
 
+variable "zones" {
+  description = "The zones of the region"
+}
+
 variable "network" {
   description = "The VPC network to host the cluster in"
 }
@@ -47,3 +51,22 @@ variable "compute_engine_service_account" {
   description = "Service account to associate to the nodes in the cluster"
 }
 
+variable "http_load_balancing" {
+  description = "Enalbe disable http load balancing"
+}
+
+variable "network_policy" {
+  description = "networ policy"
+}
+
+variable "horizontal_pod_autoscaling" {
+  description = "Eanable disable horizontal pod autoscaling"
+}
+
+variable "filestore_csi_driver" {
+  description = "filestore_csi_driver"
+}
+
+variable "deletion_protection" {
+  description = "deletion_protection"
+}
